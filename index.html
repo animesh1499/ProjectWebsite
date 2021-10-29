@@ -45,7 +45,7 @@ Complete Web Development Course
 <div class="container">
 <h1>Complete Web Development Course</h1>
 <h2>Go from Zero-skills to Cash-Earning Web Developer</h2>
-<p><a class="btn btn-default btn-lg">Join us Now!</a></p>
+<p><a class="btn btn-default btn-lg" href="#loginModal" data-toggle="modal">Join us Now!</a></p>
 </div>
 </div>
 <div id="about">
@@ -85,7 +85,56 @@ Complete Web Development Course
     <h2>Full curriculum including all major Web technologies.</h2>
     </div>
 </div>
+<form method="post" id="loginform">
+        <div class="modal" id="loginModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <h4 id="myModalLabel">
+                    Login: 
+                  </h4>
+              </div>
+              <div class="modal-body">
+                  
+                  <!--Login message from PHP file-->
+                  <div id="loginmessage"></div>
+                  
 
+                  <div class="form-group">
+                      <label for="loginemail" class="sr-only">Email:</label>
+                      <input class="form-control" type="email" name="loginemail" id="loginemail" placeholder="Email" maxlength="50">
+                  </div>
+                  <div class="form-group">
+                      <label for="loginpassword" class="sr-only">Password</label>
+                      <input class="form-control" type="password" name="loginpassword" id="loginpassword" placeholder="Password" maxlength="30">
+                  </div>
+                  <div class="checkbox">
+                      <label>
+                          <input type="checkbox"  name="rememberme" id="rememberme">
+                        Remember me
+                      </label>
+                          <a class="pull-right" style="cursor: pointer" data-dismiss="modal" data-target="#forgotpasswordModal" data-toggle="modal">
+                      Forgot Password?
+                      </a>
+                  </div>
+                  
+              </div>
+              <div class="modal-footer">
+                  <input class="btn green" name="login" type="submit" value="Login">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  Cancel
+                </button>
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal" data-target="signupModal" data-toggle="modal">
+                  Register
+                </button>  
+              </div>
+          </div>
+      </div>
+      </div>
+      </form>
 </div>
 <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only"> previous</span></a>
 <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">next</span></a>
